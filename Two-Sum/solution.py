@@ -19,6 +19,8 @@ if __name__ == "__main__":
 
 
 '''
+    https://leetcode.com/problems/two-sum/description/
+    
     My solution would be considered naive, O(N^2) cause of the 2 for loops
 
     The optimal way to do it would be the following

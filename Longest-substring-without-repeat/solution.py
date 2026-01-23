@@ -70,29 +70,4 @@ class Solution:
         return longestLength
 
 
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        longestStart = 0
-        longestStop  = 0
-
-        longestLength = 0 
-
-
-        # while stop < len(s):
-        valid = {}
-        for i, letter in enumerate(s):
-            if letter in valid and valid[letter] >= longestStart:
-                # Move start to right after the previous occurrence
-                longestStart = valid[letter] + 1
-                longestStop = valid[letter]+1
-            else :
-                longestStop = i 
-            valid[letter] = i
-            
-
-            # contender = i - longestStart + 1
-            # if (contender >= longestLength):
-            #     longestLength = contender
-        return longestStop - longestStart + 1
-
-
 
